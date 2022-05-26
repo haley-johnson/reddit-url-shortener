@@ -6,7 +6,7 @@ import requests
 import re
 
 def bot_login():
-    print ("Loggin in...")
+    print ("Logging in to Reddit...")
     r = praw.Reddit(username = config.username,
             password = config.password,
             client_id = config.client_id,
@@ -17,7 +17,7 @@ def bot_login():
     return r
 
 def run_bot(r, comments_replied_to):
-    print ("Obtaining 10 Comments...")
+    print ("Grabbing 10 Comments...")
 
     found_url = ""
 
